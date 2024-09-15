@@ -3,10 +3,10 @@ import s from "./Options.module.css";
 const Options = ({ options, onLeaveFeedback, totalFeedback, onReset }) => {
   return (
     <div className={s.options}>
-      <h2 className={s.text}>
+      {/* <h2 className={s.text}>
         Please leave your feedback about our service by selecting one of the
         options below.
-      </h2>
+      </h2> */}
       {options.map((option) => (
         <button
           className={s.btn}

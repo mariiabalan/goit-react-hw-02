@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
-import Feedback from "./components/Feedback";
-import Options from "./components/Options";
-import Notification from "./components/Notification";
+import Feedback from "./components/Feedback/Feedback";
+import Options from "./components/Options/Options";
+import Notification from "./components/Notification/Notification";
+import Description from "./components/Description/Description";
+
 const App = () => {
   // Ініціалізуємо стан за допомогою функції, яка зчитує дані з локального сховища
   const [feedback, setFeedback] = useState(() => {
@@ -46,7 +48,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>Sip Happens Café</h1>
+      <Description />
 
       {/* Передаємо функцію updateFeedback та totalFeedback як пропси */}
       <Options
